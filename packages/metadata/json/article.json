@@ -1,0 +1,18 @@
+{
+  "packages": {
+    "name": "article",
+    "dir": "packages/article"
+  },
+  "functions": [
+    {
+      "name": "Vue",
+      "package": "article",
+      "children": [
+        {
+          "name": "自定义指令",
+          "package": "/article/Vue"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "zhongxinke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev packages",
+    "docs:build": "vitepress build packages",
+    "docs:preview": "vitepress preview packages",
+    "update": "npm run -C packages/metadata update"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "esno": "^4.7.0",
+    "fs-extra": "^11.2.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.77.2",
+    "typescript": "^5.4.5",
+    "unocss": "^0.59.4",
+    "vite": "^5.2.11",
+    "vite-plugin-inspect": "^0.8.4",
+    "vitepress": "^1.1.4"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.9.0",
+    "fast-glob": "^3.3.2",
+    "gray-matter": "^4.0.3"
+  }
+}

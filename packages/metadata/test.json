@@ -1,0 +1,18 @@
+{
+  "package": {
+    "dir": "",
+    "name": "core"
+  },
+  "functions": [
+    {
+      "name": "components",
+      "package": "core",
+      "children": [
+        {
+          "name": "Flex",
+          "package": "component"
+        }
+      ]
+    }
+  ]
+}

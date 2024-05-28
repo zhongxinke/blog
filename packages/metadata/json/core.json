@@ -1,0 +1,44 @@
+{
+  "packages": {
+    "name": "core",
+    "dir": "packages/core"
+  },
+  "functions": [
+    {
+      "name": "cli",
+      "package": "core"
+    },
+    {
+      "name": "components",
+      "package": "core",
+      "children": [
+        {
+          "name": "CaptchaInput",
+          "package": "/core/components"
+        },
+        {
+          "name": "Flex",
+          "package": "/core/components"
+        },
+        {
+          "name": "TextEllipsis",
+          "package": "/core/components"
+        }
+      ]
+    },
+    {
+      "name": "hooks",
+      "package": "core"
+    },
+    {
+      "name": "utils",
+      "package": "core",
+      "children": [
+        {
+          "name": "directives",
+          "package": "/core/utils"
+        }
+      ]
+    }
+  ]
+}

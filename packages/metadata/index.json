@@ -1,0 +1,44 @@
+{
+  "packages": {
+    "core": {
+      "name": "core",
+      "dir": "packages/core"
+    },
+    "article": {
+      "name": "article",
+      "dir": "packages/article"
+    },
+    "example": {
+      "name": "example",
+      "dir": "packages/example"
+    }
+  },
+  "functions": [
+    {
+      "name": "cli",
+      "package": "core"
+    },
+    {
+      "name": "components",
+      "package": "core",
+      "children": [
+        {
+          "name": "Flex",
+          "package": "components"
+        }
+      ]
+    },
+    {
+      "name": "utils",
+      "package": "core"
+    },
+    {
+      "name": "hooks",
+      "package": "core"
+    },
+    {
+      "name": "20240516",
+      "package": "article"
+    }
+  ]
+}
