@@ -9,6 +9,14 @@
       "package": "article",
       "children": [
         {
+          "name": "依赖注入",
+          "package": "/article/Vue"
+        },
+        {
+          "name": "组件v-model",
+          "package": "/article/Vue"
+        },
+        {
           "name": "自定义指令",
           "package": "/article/Vue"
         }
