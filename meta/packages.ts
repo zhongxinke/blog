@@ -7,5 +7,8 @@ export const packages = [
   },
   {
     name: "example"
+  },
+  {
+    name: "interview"
   }
 ];

@@ -1,9 +1,11 @@
 import { defineConfig } from "vitepress";
 import viteConfig from "./vite.config";
 import {
+  interview_functions,
   example_functions,
   core_functions,
   article_functions,
+  interview_packages,
   example_packages,
   core_packages,
   article_packages
@@ -13,19 +15,25 @@ import { CoreFunction } from "../metadata/type";
 const Core = getFunctionsSideBar(core_functions, core_packages.name);
 const Article = getFunctionsSideBar(article_functions, article_packages.name);
 const Example = getFunctionsSideBar(example_functions, example_packages.name);
+const Interview = getFunctionsSideBar(
+  interview_functions,
+  interview_packages.name
+);
 
-console.log(Core[1].items);
+console.dir(Interview);
 const sidebar = {
   "/core/": Core,
   "/article/": Article,
-  "/example/": Example
+  "/example/": Example,
+  "/interview/": Interview
 };
 
 const nav = [
   { text: "Home", link: "/" },
   { text: "Core", link: Core[0]?.link ?? "/404" },
   { text: "Atricle", link: Article[0]?.link ?? "/404" },
-  { text: "Example", link: Example[0]?.link ?? "/404" }
+  { text: "Example", link: Example[0]?.link ?? "/404" },
+  { text: "面试", link: Interview[0]?.link ?? "/404" }
 ];
 
 // https://vitepress.dev/reference/site-config

@@ -1,0 +1,38 @@
+{
+  "packages": {
+    "name": "interview",
+    "dir": "packages/interview"
+  },
+  "functions": [
+    {
+      "name": "ES6",
+      "package": "interview",
+      "children": [
+        {
+          "name": "Promise",
+          "package": "/interview/ES6"
+        }
+      ]
+    },
+    {
+      "name": "Http&Https",
+      "package": "interview"
+    },
+    {
+      "name": "Html&Css",
+      "package": "interview"
+    },
+    {
+      "name": "工程化",
+      "package": "interview"
+    },
+    {
+      "name": "JS",
+      "package": "interview"
+    },
+    {
+      "name": "浏览器",
+      "package": "interview"
+    }
+  ]
+}

@@ -5,11 +5,29 @@
   },
   "functions": [
     {
+      "name": "ES6",
+      "package": "article",
+      "children": [
+        {
+          "name": "Set和Map",
+          "package": "/article/ES6"
+        },
+        {
+          "name": "实现Promise",
+          "package": "/article/ES6"
+        }
+      ]
+    },
+    {
       "name": "Vue",
       "package": "article",
       "children": [
         {
           "name": "依赖注入",
+          "package": "/article/Vue"
+        },
+        {
+          "name": "实现ClickOutSide",
           "package": "/article/Vue"
         },
         {

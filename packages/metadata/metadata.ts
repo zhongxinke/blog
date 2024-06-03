@@ -11,3 +11,8 @@ export {
   functions as example_functions,
   packages as example_packages
 } from "./json/example.json";
+
+export {
+  functions as interview_functions,
+  packages as interview_packages
+} from "./json/interview.json";
