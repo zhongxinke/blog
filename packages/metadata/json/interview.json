@@ -19,11 +19,11 @@
       "package": "interview"
     },
     {
-      "name": "Html&Css",
+      "name": "工程化",
       "package": "interview"
     },
     {
-      "name": "工程化",
+      "name": "浏览器",
       "package": "interview"
     },
     {
@@ -31,7 +31,7 @@
       "package": "interview"
     },
     {
-      "name": "浏览器",
+      "name": "Html&Css",
       "package": "interview"
     }
   ]

@@ -6,7 +6,13 @@
   "functions": [
     {
       "name": "cli",
-      "package": "core"
+      "package": "core",
+      "children": [
+        {
+          "name": "压缩图片",
+          "package": "/core/cli"
+        }
+      ]
     },
     {
       "name": "components",
@@ -34,6 +40,10 @@
       "name": "utils",
       "package": "core",
       "children": [
+        {
+          "name": "compress-images",
+          "package": "/core/utils"
+        },
         {
           "name": "directives",
           "package": "/core/utils"

@@ -39,6 +39,10 @@
           "package": "/article/Vue"
         }
       ]
+    },
+    {
+      "name": "计算机网络",
+      "package": "article"
     }
   ]
 }
