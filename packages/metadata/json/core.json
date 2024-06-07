@@ -33,10 +33,6 @@
       ]
     },
     {
-      "name": "hooks",
-      "package": "core"
-    },
-    {
       "name": "utils",
       "package": "core",
       "children": [
@@ -49,6 +45,10 @@
           "package": "/core/utils"
         }
       ]
+    },
+    {
+      "name": "hooks",
+      "package": "core"
     }
   ]
 }

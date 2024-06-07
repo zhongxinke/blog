@@ -20,7 +20,6 @@ const Interview = getFunctionsSideBar(
   interview_packages.name
 );
 
-console.dir(Interview);
 const sidebar = {
   "/core/": Core,
   "/article/": Article,
@@ -40,7 +39,7 @@ const nav = [
 export default defineConfig({
   title: "科",
   description: "vue3, vue3封装组件",
-  // base: "/blog/",
+  base: "/blog/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav,
