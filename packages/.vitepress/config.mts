@@ -28,11 +28,11 @@ const sidebar = {
 };
 
 const nav = [
-  { text: "Home", link: "/" },
-  { text: "Core", link: Core[0]?.link ?? "/404" },
-  { text: "Atricle", link: Article[0]?.link ?? "/404" },
-  { text: "Example", link: Example[0]?.link ?? "/404" },
-  { text: "面试", link: Interview[0]?.link ?? "/404" }
+  { text: "首页", link: "/" },
+  { text: "文章", link: Article[0]?.link ?? "/404" },
+  { text: "工具", link: Core[0]?.link ?? "/404" },
+  { text: "案例", link: Example[0]?.link ?? "/404" },
+  { text: "编程题", link: Interview[0]?.link ?? "/404" }
 ];
 
 // https://vitepress.dev/reference/site-config
@@ -43,7 +43,6 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav,
-
     sidebar
   },
   vite: viteConfig
@@ -51,12 +50,20 @@ export default defineConfig({
 
 function getFunctionsSideBar(fns: CoreFunction[], dir: string) {
   return fns.map(item => {
-    return {
-      text: item.name,
-      link: item.children
-        ? `${item.children[0].package}/${item.children[0].name}/index.md`
-        : `${item.package}/${item.name}/index.md`,
-      items: item.children ? getFunctionsSideBar(item.children, dir) : []
+    const { children, name } = item;
+    const firstChildren = children?.[0];
+
+    const options = {
+      text: name,
+      link: firstChildren
+        ? `/${firstChildren.package}/${firstChildren.name}/index.md`
+        : `/${item.package}/${item.name}/index.md`
     };
+
+    if (children) {
+      options["items"] = getFunctionsSideBar(children, dir);
+    }
+
+    return options;
   });
 }

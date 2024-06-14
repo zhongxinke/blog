@@ -1,7 +1,5 @@
 # 浏览器解析并渲染原理
 
-先来看图
-
 <img src="http://zhongxk.com/blogImg/浏览器解析并渲染流程.png" title="渲染流程图" alt="渲染流程图" width="802px" style="max-width: none" />
 
 ## 1.解析HTML

@@ -3,5 +3,26 @@
     "name": "example",
     "dir": "packages/example"
   },
-  "functions": []
+  "functions": [
+    {
+      "name": "1.AI中台",
+      "package": "example"
+    },
+    {
+      "name": "2.AI法务",
+      "package": "example"
+    },
+    {
+      "name": "3.AI桃奢",
+      "package": "example"
+    },
+    {
+      "name": "4.简易版消消乐",
+      "package": "example"
+    },
+    {
+      "name": "5.合并汽车小游戏",
+      "package": "example"
+    }
+  ]
 }

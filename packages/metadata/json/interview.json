@@ -5,70 +5,16 @@
   },
   "functions": [
     {
-      "name": "Http&Https",
+      "name": "实现apply、call",
       "package": "interview"
     },
     {
-      "name": "ES6",
-      "package": "interview",
-      "children": [
-        {
-          "name": "Promise",
-          "package": "/interview/ES6"
-        }
-      ]
-    },
-    {
-      "name": "JS",
-      "package": "interview",
-      "children": [
-        {
-          "name": "apply、call",
-          "package": "/interview/JS"
-        },
-        {
-          "name": "debounce",
-          "package": "/interview/JS"
-        },
-        {
-          "name": "执行机制",
-          "package": "/interview/JS"
-        }
-      ]
-    },
-    {
-      "name": "Html&Css",
+      "name": "交通灯问题",
       "package": "interview"
     },
     {
-      "name": "工程化",
+      "name": "实现debounce",
       "package": "interview"
-    },
-    {
-      "name": "浏览器",
-      "package": "interview",
-      "children": [
-        {
-          "name": "chromeV8引擎",
-          "package": "/interview/浏览器"
-        },
-        {
-          "name": "垃圾回收机制",
-          "package": "/interview/浏览器"
-        },
-        {
-          "name": "浏览器渲染原理",
-          "package": "/interview/浏览器"
-        },
-        {
-          "name": "缓存机制",
-          "package": "/interview/浏览器"
-        },
-        {
-          "name": "输入网址到网页，期间发生了什么？",
-          "package": "/interview/浏览器"
-        }
-      ]
     }
   ]
 }

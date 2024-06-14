@@ -10,7 +10,7 @@
       "children": [
         {
           "name": "压缩图片",
-          "package": "/core/cli"
+          "package": "core/cli"
         }
       ]
     },
@@ -20,15 +20,15 @@
       "children": [
         {
           "name": "CaptchaInput",
-          "package": "/core/components"
+          "package": "core/components"
         },
         {
           "name": "Flex",
-          "package": "/core/components"
+          "package": "core/components"
         },
         {
           "name": "TextEllipsis",
-          "package": "/core/components"
+          "package": "core/components"
         }
       ]
     },
@@ -38,11 +38,11 @@
       "children": [
         {
           "name": "compress-images",
-          "package": "/core/utils"
+          "package": "core/utils"
         },
         {
           "name": "directives",
-          "package": "/core/utils"
+          "package": "core/utils"
         }
       ]
     },

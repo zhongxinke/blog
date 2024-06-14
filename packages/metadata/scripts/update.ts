@@ -14,7 +14,7 @@ export async function listFunctions(dir: string, ignore: string[] = []) {
     cwd: dir,
     ignore: ["_*", "dist", "node_modules", ...ignore]
   });
-  files.sort();
+  // files.sort();
   return files;
 }
 
@@ -46,7 +46,7 @@ export async function readMetadata(info: (typeof packages)[number]) {
         for (const childName of childFiles) {
           fn.children.push({
             name: childName,
-            package: "/" + pkg.name + "/" + fnName
+            package: pkg.name + "/" + fnName
           });
         }
       }

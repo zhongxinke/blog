@@ -2,12 +2,12 @@ import fs from "fs-extra";
 import sharp from "sharp";
 import path from "path";
 import { program } from "commander";
-
-const CIMG_DATA_NAME = path.resolve(__dirname, "cimg_data.json");
+const ROOT_PATH = process.cwd();
+const CIMG_DATA_NAME = path.resolve(ROOT_PATH, "cimg_data.json");
 
 const options = {
-  outputPath: path.resolve(__dirname, "images"),
-  entryPath: path.resolve(__dirname, "images"),
+  outputPath: path.join(ROOT_PATH, "images"),
+  entryPath: path.join(ROOT_PATH, "images"),
   jqly: 80,
   pqua: 60
 };
@@ -48,7 +48,6 @@ async function processImages() {
       : {};
 
     function isCompressed(fileName: string, size: number) {
-      console.log(fileName, size);
       return cache[fileName] && +cache[fileName] === size;
     }
 
@@ -71,6 +70,7 @@ program
   .version("0.0.1")
   .option("-e, --entry <path>", "输入路径", "images")
   .option("-o, --out <path>", "输出路径", "images")
+  .option("-eo, --entryout <path>", "输入输出相同路径")
   .option(
     "--pqua <value>",
     "png压缩质量(0-9)，0表示无压缩，9表示最高压缩比",
@@ -78,8 +78,16 @@ program
   )
   .option("--jqly <value>", "jpeg压缩质量(0-100)", "80")
   .action(source => {
-    options.entryPath = path.resolve(__dirname, source.e);
-    options.outputPath = path.resolve(__dirname, source.o);
+    if (source.entryout) {
+      options.outputPath = options.entryPath = path.join(
+        ROOT_PATH,
+        source.entryout
+      );
+    } else {
+      options.entryPath = path.join(ROOT_PATH, source.entry);
+      options.outputPath = path.join(ROOT_PATH, source.out);
+    }
+
     options.jqly = +source.jqly;
     options.pqua = +source.pqua;
     processImages();

@@ -5,38 +5,26 @@
   },
   "functions": [
     {
+      "name": "JS",
+      "package": "article",
+      "children": [
+        {
+          "name": "执行机制",
+          "package": "article/JS"
+        }
+      ]
+    },
+    {
       "name": "ES6",
       "package": "article",
       "children": [
         {
           "name": "Set和Map",
-          "package": "/article/ES6"
+          "package": "article/ES6"
         },
         {
           "name": "实现Promise",
-          "package": "/article/ES6"
-        }
-      ]
-    },
-    {
-      "name": "浏览器",
-      "package": "article",
-      "children": [
-        {
-          "name": "chromeV8引擎",
-          "package": "/article/浏览器"
-        },
-        {
-          "name": "垃圾回收机制",
-          "package": "/article/浏览器"
-        },
-        {
-          "name": "浏览器渲染原理",
-          "package": "/article/浏览器"
-        },
-        {
-          "name": "缓存机制",
-          "package": "/article/浏览器"
+          "package": "article/ES6"
         }
       ]
     },
@@ -46,19 +34,41 @@
       "children": [
         {
           "name": "依赖注入",
-          "package": "/article/Vue"
+          "package": "article/Vue"
         },
         {
           "name": "实现ClickOutSide",
-          "package": "/article/Vue"
+          "package": "article/Vue"
         },
         {
           "name": "组件v-model",
-          "package": "/article/Vue"
+          "package": "article/Vue"
         },
         {
           "name": "自定义指令",
-          "package": "/article/Vue"
+          "package": "article/Vue"
+        }
+      ]
+    },
+    {
+      "name": "浏览器",
+      "package": "article",
+      "children": [
+        {
+          "name": "chromeV8引擎",
+          "package": "article/浏览器"
+        },
+        {
+          "name": "垃圾回收机制",
+          "package": "article/浏览器"
+        },
+        {
+          "name": "浏览器渲染原理",
+          "package": "article/浏览器"
+        },
+        {
+          "name": "缓存机制",
+          "package": "article/浏览器"
         }
       ]
     },
@@ -68,7 +78,7 @@
       "children": [
         {
           "name": "Http和Https",
-          "package": "/article/计算机网络"
+          "package": "article/计算机网络"
         }
       ]
     }
