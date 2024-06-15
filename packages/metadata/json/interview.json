@@ -5,11 +5,11 @@
   },
   "functions": [
     {
-      "name": "实现apply、call",
+      "name": "交通灯问题",
       "package": "interview"
     },
     {
-      "name": "交通灯问题",
+      "name": "实现apply、call",
       "package": "interview"
     },
     {

@@ -11,6 +11,10 @@
         {
           "name": "执行机制",
           "package": "article/JS"
+        },
+        {
+          "name": "执行环境和作用域",
+          "package": "article/JS"
         }
       ]
     },
