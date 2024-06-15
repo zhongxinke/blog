@@ -5,20 +5,6 @@
   },
   "functions": [
     {
-      "name": "JS",
-      "package": "article",
-      "children": [
-        {
-          "name": "执行机制",
-          "package": "article/JS"
-        },
-        {
-          "name": "执行环境和作用域",
-          "package": "article/JS"
-        }
-      ]
-    },
-    {
       "name": "ES6",
       "package": "article",
       "children": [
@@ -29,6 +15,20 @@
         {
           "name": "实现Promise",
           "package": "article/ES6"
+        }
+      ]
+    },
+    {
+      "name": "JS",
+      "package": "article",
+      "children": [
+        {
+          "name": "执行机制",
+          "package": "article/JS"
+        },
+        {
+          "name": "执行环境和作用域链",
+          "package": "article/JS"
         }
       ]
     },
