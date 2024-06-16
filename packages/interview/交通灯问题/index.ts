@@ -43,14 +43,15 @@ export default class TrafficLight {
   }
 
   update(callback: (light: { color: Color; remain: number }) => void) {
-    // this.updating();
-    requestAnimationFrame(() => {
-      this.updating();
-      callback({
-        color: this.currentLight.color,
-        remain: Math.ceil(this.currentLight.lasts - this.disTime())
+    if (typeof window !== "undefined") {
+      requestAnimationFrame(() => {
+        this.updating();
+        callback({
+          color: this.currentLight.color,
+          remain: Math.ceil(this.currentLight.lasts - this.disTime())
+        });
+        this.update(callback);
       });
-      this.update(callback);
-    });
+    }
   }
 }
