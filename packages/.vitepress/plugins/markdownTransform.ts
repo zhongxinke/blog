@@ -4,6 +4,11 @@ import { format } from "prettier";
 import { join, resolve } from "node:path";
 
 const DIR_SRC = resolve(__dirname, "../..");
+const PACKAGES = "packages";
+
+function isPackagesName(name: string) {
+  return name === PACKAGES;
+}
 
 export function MarkdownTransform(): Plugin {
   return {
@@ -22,7 +27,7 @@ export function MarkdownTransform(): Plugin {
             : frontmatterEnds + 4
           : firstHeader;
 
-      const [pkg, category, _name, i] = id.split("/").slice(-4);
+      const [pkg, category, _name] = id.split("/").slice(-4);
 
       // code.replace(/\n```ts( [^\n]+)?\n(.+?)\n```\n/gs, (...args) => {
       //   console.log({ args });
@@ -43,7 +48,7 @@ async function getFunctionMarkdown(
   category: string,
   name: string
 ) {
-  const dirname = join(DIR_SRC, pkg, category, name);
+  const dirname = join(DIR_SRC, isPackagesName(pkg) ? "" : pkg, category, name);
 
   const demoPath = ["demo.vue", "demo.client.vue"].find(i =>
     fs.existsSync(join(dirname, i))
