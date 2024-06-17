@@ -14,8 +14,9 @@ export async function listFunctions(dir: string, ignore: string[] = []) {
     cwd: dir,
     ignore: ["_*", "dist", "node_modules", ...ignore]
   });
+
   // files.sort();
-  return files;
+  return files.sort((a: string, b: string) => a.localeCompare(b, "zh-CN"));
 }
 
 export async function readMetadata(info: (typeof packages)[number]) {
