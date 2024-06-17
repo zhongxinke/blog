@@ -5,6 +5,16 @@
   },
   "functions": [
     {
+      "name": "CSS",
+      "package": "article",
+      "children": [
+        {
+          "name": "盒模型",
+          "package": "article/CSS"
+        }
+      ]
+    },
+    {
       "name": "ES6",
       "package": "article",
       "children": [
@@ -38,6 +48,10 @@
       "children": [
         {
           "name": "依赖注入",
+          "package": "article/Vue"
+        },
+        {
+          "name": "响应式API-工具函数",
           "package": "article/Vue"
         },
         {
