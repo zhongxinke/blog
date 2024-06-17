@@ -55,10 +55,6 @@
           "package": "article/Vue"
         },
         {
-          "name": "实现ClickOutSide",
-          "package": "article/Vue"
-        },
-        {
           "name": "组件v-model",
           "package": "article/Vue"
         },
@@ -73,7 +69,7 @@
       "package": "article",
       "children": [
         {
-          "name": "chromeV8引擎",
+          "name": "Cookies、LocalStorage、SectionStorage",
           "package": "article/浏览器"
         },
         {

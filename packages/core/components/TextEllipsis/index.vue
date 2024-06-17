@@ -1,4 +1,5 @@
 <script setup lang="ts">
+type A = keyof any;
 import { computed } from "vue";
 
 const props = withDefaults(

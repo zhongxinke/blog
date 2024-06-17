@@ -5,14 +5,6 @@
   },
   "functions": [
     {
-      "name": "1.AI中台",
-      "package": "example"
-    },
-    {
-      "name": "2.AI法务",
-      "package": "example"
-    },
-    {
       "name": "3.AI桃奢",
       "package": "example"
     },
@@ -21,7 +13,15 @@
       "package": "example"
     },
     {
+      "name": "2.AI法务",
+      "package": "example"
+    },
+    {
       "name": "5.合并汽车小游戏",
+      "package": "example"
+    },
+    {
+      "name": "1.AI中台",
       "package": "example"
     }
   ]
