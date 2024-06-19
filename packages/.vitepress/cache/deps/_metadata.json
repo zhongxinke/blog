@@ -1,31 +1,58 @@
 {
-  "hash": "8db870cd",
+  "hash": "c736c3d0",
   "configHash": "8bb15357",
-  "lockfileHash": "0b3e9891",
-  "browserHash": "9d43e827",
+  "lockfileHash": "c7873601",
+  "browserHash": "c516eefb",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "590bc19b",
+      "fileHash": "3f9f7d0e",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "2d93f581",
+      "fileHash": "f827baa0",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "8d30199d",
+      "fileHash": "213b56d8",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "c1fa3574",
+      "needsInterop": false
+    },
+    "three/addons/renderers/CSS3DRenderer": {
+      "src": "../../../../node_modules/three/examples/jsm/renderers/CSS3DRenderer.js",
+      "file": "three_addons_renderers_CSS3DRenderer.js",
+      "fileHash": "8eb0c145",
+      "needsInterop": false
+    },
+    "three/addons/libs/tween.module.js": {
+      "src": "../../../../node_modules/three/examples/jsm/libs/tween.module.js",
+      "file": "three_addons_libs_tween__module__js.js",
+      "fileHash": "dca0158d",
+      "needsInterop": false
+    },
+    "three/addons/controls/TrackballControls": {
+      "src": "../../../../node_modules/three/examples/jsm/controls/TrackballControls.js",
+      "file": "three_addons_controls_TrackballControls.js",
+      "fileHash": "1f7311cc",
       "needsInterop": false
     }
   },
   "chunks": {
     "chunk-RY5ODQAQ": {
       "file": "chunk-RY5ODQAQ.js"
+    },
+    "chunk-4FBY4EU6": {
+      "file": "chunk-4FBY4EU6.js"
     }
   }
 }

@@ -16,7 +16,18 @@ export async function listFunctions(dir: string, ignore: string[] = []) {
   });
 
   // files.sort();
-  return files.sort((a: string, b: string) => a.localeCompare(b, "zh-CN"));
+  return files.sort((a, b) => {
+    const isAChinese = /[\u4e00-\u9fa5]/.test(a);
+    const isBChinese = /[\u4e00-\u9fa5]/.test(b);
+
+    if (isAChinese && !isBChinese) {
+      return 1; // 'a' 是中文且 'b' 不是中文，'a' 应该在 'b' 后面
+    } else if (!isAChinese && isBChinese) {
+      return -1; // 'b' 是中文且 'a' 不是中文，'a' 应该在 'b' 前面
+    } else {
+      return a.localeCompare(b, "zh-CN"); // 都是中文或者都是英文，按照默认排序规则
+    }
+  });
 }
 
 export async function readMetadata(info: (typeof packages)[number]) {
@@ -34,26 +45,27 @@ export async function readMetadata(info: (typeof packages)[number]) {
   };
   indexes.packages = pkg;
 
-  await Promise.all(
-    files.map(async fnName => {
-      const fn: CoreFunction = {
-        name: fnName,
-        package: pkg.name
-      };
+  for (const fnName of files) {
+    const fn: CoreFunction = {
+      name: fnName,
+      package: pkg.name
+    };
 
-      const childFiles = await listFunctions(join(DIR_SRC, info.name, fnName));
-      if (childFiles.length) {
-        fn.children = [];
-        for (const childName of childFiles) {
-          fn.children.push({
-            name: childName,
-            package: pkg.name + "/" + fnName
-          });
-        }
+    const childFiles = await listFunctions(join(DIR_SRC, info.name, fnName));
+    if (childFiles.length) {
+      fn.children = [];
+      for (const childName of childFiles) {
+        fn.children.push({
+          name: childName,
+          package: pkg.name + "/" + fnName
+        });
       }
-      indexes.functions.push(fn);
-    })
-  );
+    }
+    indexes.functions.push(fn);
+  }
+  // await Promise.all(
+
+  // );
 
   return indexes;
 }

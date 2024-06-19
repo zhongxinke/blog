@@ -5,38 +5,6 @@
   },
   "functions": [
     {
-      "name": "计算机网络",
-      "package": "article",
-      "children": [
-        {
-          "name": "Http和Https",
-          "package": "article/计算机网络"
-        }
-      ]
-    },
-    {
-      "name": "浏览器",
-      "package": "article",
-      "children": [
-        {
-          "name": "缓存机制",
-          "package": "article/浏览器"
-        },
-        {
-          "name": "垃圾回收机制",
-          "package": "article/浏览器"
-        },
-        {
-          "name": "浏览器渲染原理",
-          "package": "article/浏览器"
-        },
-        {
-          "name": "Cookies、LocalStorage、SectionStorage",
-          "package": "article/浏览器"
-        }
-      ]
-    },
-    {
       "name": "CSS",
       "package": "article",
       "children": [
@@ -64,6 +32,10 @@
       "name": "JS",
       "package": "article",
       "children": [
+        {
+          "name": "原型链",
+          "package": "article/JS"
+        },
         {
           "name": "执行环境和作用域链",
           "package": "article/JS"
@@ -93,6 +65,38 @@
         {
           "name": "组件v-model",
           "package": "article/Vue"
+        }
+      ]
+    },
+    {
+      "name": "计算机网络",
+      "package": "article",
+      "children": [
+        {
+          "name": "Http和Https",
+          "package": "article/计算机网络"
+        }
+      ]
+    },
+    {
+      "name": "浏览器",
+      "package": "article",
+      "children": [
+        {
+          "name": "Cookies、LocalStorage、SectionStorage",
+          "package": "article/浏览器"
+        },
+        {
+          "name": "缓存机制",
+          "package": "article/浏览器"
+        },
+        {
+          "name": "垃圾回收机制",
+          "package": "article/浏览器"
+        },
+        {
+          "name": "浏览器渲染原理",
+          "package": "article/浏览器"
         }
       ]
     }
