@@ -50,8 +50,8 @@ export default class ThreeUtils {
     const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
 
     new TWEEN.Tween(this.groupVector)
-      .to({ x: mouseX, y: mouseY }, 1000)
-      .easing(TWEEN.Easing.Quadratic.InOut)
+      .to({ x: mouseX, y: mouseY }, 500)
+      .easing(TWEEN.Easing.Sinusoidal.Out)
       .onUpdate(({ x, y }) => {
         this.group.lookAt(x, y * 0.5, 1);
       })

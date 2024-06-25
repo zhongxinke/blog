@@ -1,5 +1,6 @@
 ---
 sidebar: false
+navbar: false
 layout: page
 pageClass: custom-page-class
 ---

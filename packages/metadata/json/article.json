@@ -65,6 +65,10 @@
         {
           "name": "组件v-model",
           "package": "article/Vue"
+        },
+        {
+          "name": "diff算法",
+          "package": "article/Vue"
         }
       ]
     },
