@@ -55,6 +55,10 @@
       "package": "article",
       "children": [
         {
+          "name": "插槽",
+          "package": "article/Vue"
+        },
+        {
           "name": "响应式API-工具函数",
           "package": "article/Vue"
         },
