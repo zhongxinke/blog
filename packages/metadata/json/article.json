@@ -111,6 +111,10 @@
           "package": "article/浏览器"
         }
       ]
+    },
+    {
+      "name": "性能优化",
+      "package": "article"
     }
   ]
 }
