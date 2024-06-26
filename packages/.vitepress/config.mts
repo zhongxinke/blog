@@ -27,7 +27,7 @@ const sidebar = {
   "/interview/": Interview
 };
 
-const nav = [
+export const nav = [
   { text: "首页", link: "/" },
   { text: "文章", link: Article[0]?.link ?? "/404" },
   { text: "工具", link: Core[0]?.link ?? "/404" },

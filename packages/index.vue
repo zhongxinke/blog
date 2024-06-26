@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 import ThreeUtils from "./index";
+import Nav from "./nav.vue";
 
 onMounted(() => {
   const utils = new ThreeUtils(document.getElementById("container")!);
@@ -10,6 +11,8 @@ onMounted(() => {
 <template>
   <div id="vignette"></div>
   <div id="container"></div>
+
+  <Nav />
 </template>
 
 <style lang="scss" scoped>

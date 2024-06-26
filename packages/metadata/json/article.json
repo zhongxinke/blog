@@ -33,6 +33,10 @@
       "package": "article",
       "children": [
         {
+          "name": "闭包",
+          "package": "article/JS"
+        },
+        {
           "name": "原型链",
           "package": "article/JS"
         },

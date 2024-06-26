@@ -7,8 +7,14 @@ import { MarkdownTransform } from "./plugins/markdownTransform";
 
 export default defineConfig({
   server: {
-    fs: {
-      allow: [resolve(__dirname, "..")]
+    // fs: {
+    //   allow: [resolve(__dirname, "..")]
+    // },
+    proxy: {
+      "/blogImg": {
+        target: "http://zhongxk.com",
+        changeOrigin: true
+      }
     }
   },
   plugins: [MarkdownTransform(), Inspect()],

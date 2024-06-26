@@ -1,7 +1,8 @@
 ---
 sidebar: false
 navbar: false
-layout: page
+outline: false
+layout: false
 pageClass: custom-page-class
 ---
 

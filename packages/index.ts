@@ -34,13 +34,19 @@ export default class ThreeUtils {
 
     this.group = new THREE.Group();
     this.groupVector = new THREE.Vector3();
+
     const plane = this.bg();
+    const section = this.section();
+    const slogan = this.slogan();
+
     this.group.add(plane);
+    this.group.add(section);
+    this.group.add(slogan);
     this.scene.add(this.group);
     this.animate();
 
     document.addEventListener("mousemove", this.onMouseMove.bind(this));
-    // window.addEventListener("resize", this.onWindowResize.bind(this));
+    window.addEventListener("resize", this.onWindowResize.bind(this));
   }
 
   onMouseMove(event) {
@@ -49,13 +55,41 @@ export default class ThreeUtils {
     const mouseX = (event.clientX / window.innerWidth) * 2 - 1;
     const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
 
-    new TWEEN.Tween(this.groupVector)
-      .to({ x: mouseX, y: mouseY }, 500)
-      .easing(TWEEN.Easing.Sinusoidal.Out)
-      .onUpdate(({ x, y }) => {
-        this.group.lookAt(x, y * 0.5, 1);
-      })
-      .start();
+    // new TWEEN.Tween(this.groupVector)
+    //   .to({ x: mouseX, y: mouseY }, 500)
+    //   .easing(TWEEN.Easing.Sinusoidal.Out)
+    //   .onUpdate(({ x, y }) => {
+
+    //   })
+    //   .start();
+    this.group.lookAt(mouseX * 0.7, mouseY * 0.5, 1);
+  }
+
+  slogan() {
+    const geometry = new THREE.PlaneGeometry(30, 21);
+
+    const texture = new THREE.TextureLoader().load("/blogImg/slogan.png");
+    const material = new THREE.MeshBasicMaterial({
+      map: texture,
+      transparent: true
+    });
+    const plane = new THREE.Mesh(geometry, material);
+    plane.position.z = 15;
+
+    return plane;
+  }
+  section() {
+    const geometry = new THREE.PlaneGeometry(80, 80);
+
+    const texture = new THREE.TextureLoader().load("/blogImg/boule02_2x.png");
+    const material = new THREE.MeshBasicMaterial({
+      map: texture,
+      transparent: true
+    });
+    const plane = new THREE.Mesh(geometry, material);
+    plane.position.z = 10;
+
+    return plane;
   }
 
   bg() {
@@ -64,7 +98,7 @@ export default class ThreeUtils {
       window.innerWidth
     );
 
-    const texture = new THREE.TextureLoader().load("./assets/bg2.jpeg");
+    const texture = new THREE.TextureLoader().load("/blogImg/bg2.jpeg");
     texture.wrapS = THREE.RepeatWrapping;
     texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set(window.innerHeight / 10, window.innerHeight / 10);
