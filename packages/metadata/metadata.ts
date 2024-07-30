@@ -16,3 +16,8 @@ export {
   functions as interview_functions,
   packages as interview_packages
 } from "./json/interview.json";
+
+export {
+  functions as record_functions,
+  packages as record_packages
+} from "./json/record.json";

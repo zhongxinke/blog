@@ -10,5 +10,8 @@ export const packages = [
   },
   {
     name: "interview"
+  },
+  {
+    name: "record"
   }
 ];

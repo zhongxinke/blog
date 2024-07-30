@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "name": "record",
+    "dir": "packages/record"
+  },
+  "functions": [
+    {
+      "name": "文章收录",
+      "package": "record"
+    }
+  ]
+}

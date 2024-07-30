@@ -34,7 +34,13 @@
     },
     {
       "name": "hooks",
-      "package": "core"
+      "package": "core",
+      "children": [
+        {
+          "name": "useDefer",
+          "package": "core/hooks"
+        }
+      ]
     },
     {
       "name": "utils",
