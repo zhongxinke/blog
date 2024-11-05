@@ -1,0 +1,61 @@
+{
+  "hash": "427aae15",
+  "configHash": "afb76c1d",
+  "lockfileHash": "5a868547",
+  "browserHash": "2575c6a9",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "d629cf12",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "7e0ac03e",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "a294cd3a",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "e8ffdf38",
+      "needsInterop": false
+    },
+    "three/addons/libs/tween.module.js": {
+      "src": "../../../node_modules/three/examples/jsm/libs/tween.module.js",
+      "file": "three_addons_libs_tween__module__js.js",
+      "fileHash": "30cacc81",
+      "needsInterop": false
+    },
+    "fs-extra": {
+      "src": "../../../node_modules/fs-extra/lib/index.js",
+      "file": "fs-extra.js",
+      "fileHash": "0fadee07",
+      "needsInterop": true
+    },
+    "three/addons/geometries/TextGeometry.js": {
+      "src": "../../../node_modules/three/examples/jsm/geometries/TextGeometry.js",
+      "file": "three_addons_geometries_TextGeometry__js.js",
+      "fileHash": "e6a89741",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-XYSSNQS4": {
+      "file": "chunk-XYSSNQS4.js"
+    },
+    "chunk-ENILB2DW": {
+      "file": "chunk-ENILB2DW.js"
+    },
+    "chunk-BUSYA2B4": {
+      "file": "chunk-BUSYA2B4.js"
+    }
+  }
+}

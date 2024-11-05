@@ -1,0 +1,18 @@
+#VPContent {
+  display: flex;
+}
+
+.VPPage {
+  flex-grow: 1;
+  display: flex;
+}
+
+.VPPage > div {
+  flex-grow: 1;
+  display: flex;
+}
+
+.VPPage > div > div {
+  flex-grow: 1;
+  display: flex;
+}
