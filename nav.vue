@@ -21,14 +21,14 @@ const nav = theme.value.nav.map(item => ({
   left: 35px;
   top: 35px;
   z-index: 99;
-  color: #a3a9aa;
+  color: #fff;
   > a {
     display: block;
     font-size: 10px;
     margin-bottom: 15px;
-    &:hover {
-      color: #fff;
-    }
+    // &:hover {
+    //   color: #fff;
+    // }
   }
 }
 </style>

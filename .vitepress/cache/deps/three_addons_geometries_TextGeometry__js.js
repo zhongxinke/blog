@@ -1,7 +1,7 @@
 import {
   ExtrudeGeometry
 } from "./chunk-ENILB2DW.js";
-import "./chunk-BUSYA2B4.js";
+import "./chunk-5WRI5ZAA.js";
 
 // node_modules/three/examples/jsm/geometries/TextGeometry.js
 var TextGeometry = class extends ExtrudeGeometry {

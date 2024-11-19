@@ -1,61 +1,103 @@
 {
-  "hash": "427aae15",
+  "hash": "07d0fd31",
   "configHash": "afb76c1d",
-  "lockfileHash": "5a868547",
-  "browserHash": "2575c6a9",
+  "lockfileHash": "733fb70f",
+  "browserHash": "3d4f1a2b",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "d629cf12",
+      "fileHash": "4a674c59",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "7e0ac03e",
+      "fileHash": "95018356",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "a294cd3a",
+      "fileHash": "648eae71",
       "needsInterop": false
     },
     "three": {
       "src": "../../../node_modules/three/build/three.module.js",
       "file": "three.js",
-      "fileHash": "e8ffdf38",
+      "fileHash": "909395fa",
       "needsInterop": false
     },
     "three/addons/libs/tween.module.js": {
       "src": "../../../node_modules/three/examples/jsm/libs/tween.module.js",
       "file": "three_addons_libs_tween__module__js.js",
-      "fileHash": "30cacc81",
+      "fileHash": "4f78fb2a",
       "needsInterop": false
     },
     "fs-extra": {
       "src": "../../../node_modules/fs-extra/lib/index.js",
       "file": "fs-extra.js",
-      "fileHash": "0fadee07",
+      "fileHash": "10a158ec",
       "needsInterop": true
     },
     "three/addons/geometries/TextGeometry.js": {
       "src": "../../../node_modules/three/examples/jsm/geometries/TextGeometry.js",
       "file": "three_addons_geometries_TextGeometry__js.js",
-      "fileHash": "e6a89741",
+      "fileHash": "02b49848",
+      "needsInterop": false
+    },
+    "pixi.js": {
+      "src": "../../../node_modules/pixi.js/lib/index.mjs",
+      "file": "pixi__js.js",
+      "fileHash": "1bf8918c",
       "needsInterop": false
     }
   },
   "chunks": {
+    "browserAll-R5VSQRLM": {
+      "file": "browserAll-R5VSQRLM.js"
+    },
+    "webworkerAll-KEXXY56E": {
+      "file": "webworkerAll-KEXXY56E.js"
+    },
+    "chunk-ABDU5VHQ": {
+      "file": "chunk-ABDU5VHQ.js"
+    },
+    "WebGPURenderer-SSPQ3WQ3": {
+      "file": "WebGPURenderer-SSPQ3WQ3.js"
+    },
+    "WebGLRenderer-QL5SELMV": {
+      "file": "WebGLRenderer-QL5SELMV.js"
+    },
+    "chunk-4M76Q7WT": {
+      "file": "chunk-4M76Q7WT.js"
+    },
+    "chunk-3ADSTOV3": {
+      "file": "chunk-3ADSTOV3.js"
+    },
+    "chunk-2YCA3WTA": {
+      "file": "chunk-2YCA3WTA.js"
+    },
+    "chunk-HVGWWAX5": {
+      "file": "chunk-HVGWWAX5.js"
+    },
+    "chunk-EXHWUFIN": {
+      "file": "chunk-EXHWUFIN.js"
+    },
+    "chunk-4FRXSBPS": {
+      "file": "chunk-4FRXSBPS.js"
+    },
+    "chunk-GOFTM4WQ": {
+      "file": "chunk-GOFTM4WQ.js"
+    },
     "chunk-XYSSNQS4": {
       "file": "chunk-XYSSNQS4.js"
     },
     "chunk-ENILB2DW": {
       "file": "chunk-ENILB2DW.js"
     },
-    "chunk-BUSYA2B4": {
-      "file": "chunk-BUSYA2B4.js"
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
     }
   }
 }
