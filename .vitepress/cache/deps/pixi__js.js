@@ -4975,7 +4975,7 @@ var browserExt = {
   },
   test: () => true,
   load: async () => {
-    await import("./browserAll-R5VSQRLM.js");
+    await import("./browserAll-7O5NU3HG.js");
   }
 };
 

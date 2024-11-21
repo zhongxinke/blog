@@ -1,35 +1,41 @@
-import { AnimatedSprite, Assets, Texture } from "pixi.js";
+import { AnimatedSprite, Application, Assets, Container, Rectangle, Texture } from "pixi.js";
 import Game from "./Game";
 
 export default class Role {
-    constructor() {
-        this.init()
-    }
-    async init() {
-        const texture = await Assets.load('https://pixijs.com/assets/spritesheet/mc.json');
+    public explosion: AnimatedSprite;
+    private speed = 2;
+    private initX = 0;
+    private scaleValue = 0.1;
+    private animationSpeed = 0.09;
 
+    async init() {
+        await Assets.load('/blogImg/me.json');
         // Create an array to store the textures
         const explosionTextures: Texture[] = [];
         let i;
 
-        for (i = 0; i < 26; i++) {
-            const texture = Texture.from(`Explosion_Sequence_A ${i + 1}.png`);
-
+        for (i = 0; i < 2; i++) {
+            const texture = Texture.from(`ani${i + 1}.png`);
             explosionTextures.push(texture);
         }
 
         // Create and randomly place the animated explosion sprites on the stage
-        for (i = 0; i < 50; i++) {
-            // Create an explosion AnimatedSprite
-            const explosion = new AnimatedSprite(explosionTextures);
+        this.explosion = new AnimatedSprite(explosionTextures);
+        this.explosion.animationSpeed = this.animationSpeed;
+        this.explosion.x = this.initX = -this.explosion.width * this.scaleValue;
+        this.explosion.y = window.innerHeight - this.explosion.height * this.scaleValue;
+        this.explosion.scale.set(0.1);
+        this.explosion.anchor.set(1);
+        this.explosion.play();
+    }
 
-            explosion.x = Math.random() * Game.instance.app.screen.width;
-            explosion.y = Math.random() * Game.instance.app.screen.height;
-            explosion.anchor.set(0.5);
-            explosion.rotation = Math.random() * Math.PI;
-            explosion.scale.set(0.75 + Math.random() * 0.5);
-            // explosion.gotoAndPlay((Math.random() * 26) | 0);
-            Game.instance.stage.addChild(explosion);
+    playing() {
+        if (this.explosion.x <= window.innerWidth / 3) {
+            this.explosion.x += this.speed;
         }
+    }
+
+    reset() {
+        this.explosion.x = this.initX;
     }
 }

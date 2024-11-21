@@ -4,22 +4,48 @@ import Game from "./game/Game";
 import Nav from "./nav.vue";
 import { MouseTrail } from "./game/MouseTrail";
 import Role from "./game/Role";
+import TimeLine from "./game/TimeLine";
+import Company from "./game/Company";
+
+const game = new Game()
+const role = new Role()
+const company = new Company()
+const timeLine = new TimeLine()
+const mouseTrail = new MouseTrail()
 
 
 onMounted(async () => {
-  await Game.instance.init(document.getElementById("container") as HTMLElement)
-  const mouseTrail = new MouseTrail()
-  // const role = new Role()
-  mouseTrail.init()
-  Game.instance.app.ticker.add(() => {
+  await game.init()
+  await role.init()
+  await company.init()
+  await mouseTrail.init(game)
+
+  game.app.stage.addChild(role.explosion, company.group)
+
+  timeLine.drawLine(game, role.explosion.y)
+
+
+
+  const handle = () => {
     mouseTrail.update()
-  })
+    role.playing()
+    company.playing(() => {
+      company.showTechnology(game)
+    })
+  }
+  game.app.ticker.add(handle)
+  
+})
+
+onUnmounted(() => {
+  game.reset()
+  company.reset()
+  role.reset()
 })
 
 </script>
 
 <template>
-  <div id="container"></div>
   <Nav />
 </template>
 

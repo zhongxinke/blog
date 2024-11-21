@@ -1,10 +1,10 @@
-import "./chunk-ABDU5VHQ.js";
 import {
   AccessibilitySystem,
   EventSystem,
   FederatedContainer,
   accessibilityTarget
 } from "./chunk-4M76Q7WT.js";
+import "./chunk-ABDU5VHQ.js";
 import "./chunk-3ADSTOV3.js";
 import "./chunk-HVGWWAX5.js";
 import {
@@ -20,4 +20,4 @@ Container.mixin(accessibilityTarget);
 // node_modules/pixi.js/lib/events/init.mjs
 extensions.add(EventSystem);
 Container.mixin(FederatedContainer);
-//# sourceMappingURL=browserAll-R5VSQRLM.js.map
+//# sourceMappingURL=browserAll-7O5NU3HG.js.map

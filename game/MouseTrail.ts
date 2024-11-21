@@ -8,7 +8,7 @@ export class MouseTrail {
     private ropeSize = 100;
     private points: Point[] = [];
     private mouseposition: { x: number, y: number } | undefined;
-    async init() {
+    async init(game: Game) {
         const trailTexture = await Assets.load('https://pixijs.com/assets/trail.png');
 
         for (let i = 0; i < this.historySize; i++) {
@@ -20,18 +20,16 @@ export class MouseTrail {
             this.points.push(new Point(0, 0))
         }
 
-        console.log(this.points[0])
-
         const rope = new MeshRope({ texture: trailTexture, points: this.points })
         rope.tint = '#0089A7';
         rope.blendMode = 'add'
 
-        Game.instance.stage.addChild(rope)
+        game.app.stage.addChild(rope)
 
 
-        Game.instance.stage.eventMode = 'static';
-        Game.instance.stage.hitArea = Game.instance.app.screen;
-        Game.instance.stage.on('mousemove', (event) => {
+        game.app.stage.eventMode = 'static';
+        game.app.stage.hitArea = game.app.screen;
+        game.app.stage.on('mousemove', (event) => {
             this.mouseposition = this.mouseposition || { x: 0, y: 0 };
             this.mouseposition.x = event.global.x;
             this.mouseposition.y = event.global.y;

@@ -1,61 +1,70 @@
 {
-  "hash": "07d0fd31",
+  "hash": "e80ebfa0",
   "configHash": "afb76c1d",
-  "lockfileHash": "733fb70f",
-  "browserHash": "3d4f1a2b",
+  "lockfileHash": "2a2d1981",
+  "browserHash": "35e07318",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "4a674c59",
+      "fileHash": "232c84cd",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "95018356",
+      "fileHash": "e3bb57bd",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "648eae71",
+      "fileHash": "aa3efc70",
       "needsInterop": false
     },
     "three": {
       "src": "../../../node_modules/three/build/three.module.js",
       "file": "three.js",
-      "fileHash": "909395fa",
+      "fileHash": "c7fd7e44",
       "needsInterop": false
     },
     "three/addons/libs/tween.module.js": {
       "src": "../../../node_modules/three/examples/jsm/libs/tween.module.js",
       "file": "three_addons_libs_tween__module__js.js",
-      "fileHash": "4f78fb2a",
+      "fileHash": "cb88b1de",
       "needsInterop": false
     },
     "fs-extra": {
       "src": "../../../node_modules/fs-extra/lib/index.js",
       "file": "fs-extra.js",
-      "fileHash": "10a158ec",
+      "fileHash": "304c7a23",
       "needsInterop": true
     },
     "three/addons/geometries/TextGeometry.js": {
       "src": "../../../node_modules/three/examples/jsm/geometries/TextGeometry.js",
       "file": "three_addons_geometries_TextGeometry__js.js",
-      "fileHash": "02b49848",
+      "fileHash": "881e004a",
       "needsInterop": false
     },
     "pixi.js": {
       "src": "../../../node_modules/pixi.js/lib/index.mjs",
       "file": "pixi__js.js",
-      "fileHash": "1bf8918c",
+      "fileHash": "54ccca25",
+      "needsInterop": false
+    },
+    "gsap": {
+      "src": "../../../node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "abdfed32",
       "needsInterop": false
     }
   },
   "chunks": {
-    "browserAll-R5VSQRLM": {
-      "file": "browserAll-R5VSQRLM.js"
+    "browserAll-7O5NU3HG": {
+      "file": "browserAll-7O5NU3HG.js"
+    },
+    "chunk-4M76Q7WT": {
+      "file": "chunk-4M76Q7WT.js"
     },
     "webworkerAll-KEXXY56E": {
       "file": "webworkerAll-KEXXY56E.js"
@@ -63,23 +72,20 @@
     "chunk-ABDU5VHQ": {
       "file": "chunk-ABDU5VHQ.js"
     },
-    "WebGPURenderer-SSPQ3WQ3": {
-      "file": "WebGPURenderer-SSPQ3WQ3.js"
-    },
-    "WebGLRenderer-QL5SELMV": {
-      "file": "WebGLRenderer-QL5SELMV.js"
-    },
-    "chunk-4M76Q7WT": {
-      "file": "chunk-4M76Q7WT.js"
-    },
     "chunk-3ADSTOV3": {
       "file": "chunk-3ADSTOV3.js"
+    },
+    "WebGPURenderer-SSPQ3WQ3": {
+      "file": "WebGPURenderer-SSPQ3WQ3.js"
     },
     "chunk-2YCA3WTA": {
       "file": "chunk-2YCA3WTA.js"
     },
     "chunk-HVGWWAX5": {
       "file": "chunk-HVGWWAX5.js"
+    },
+    "WebGLRenderer-QL5SELMV": {
+      "file": "WebGLRenderer-QL5SELMV.js"
     },
     "chunk-EXHWUFIN": {
       "file": "chunk-EXHWUFIN.js"
