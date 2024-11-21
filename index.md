@@ -10,4 +10,6 @@ pageClass: custom-page-class
 import Index from './index.vue'
 </script>
 
+<ClientOnly>
 <Index />
+</ClientOnly>

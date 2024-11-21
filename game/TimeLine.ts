@@ -1,5 +1,4 @@
-import { Container, Graphics, Text } from "pixi.js";
-import Game from "./Game";
+import Game, { GAME_X, GAME_Y } from "./Game";
 
 export default class TimeLine {
     private spaces = 720;
@@ -8,12 +7,12 @@ export default class TimeLine {
     private startTime = 2015;
     private speed = 2;
     private endTime = new Date().getFullYear();
-    private yearLine: Container[] = [];
+    private yearLine: any[] = [];
     private y: number = 0;
     drawLine(game: Game, y: number) {
-        const realPath = new Graphics();
+        const realPath = new PIXI.Graphics();
         this.y = y;
-        realPath.rect(0, y, window.innerWidth, window.innerHeight);
+        realPath.rect(0, y, GAME_X, GAME_Y);
         realPath.fill(0x000000)
         realPath.zIndex = 1
         game.app.stage.addChild(realPath);

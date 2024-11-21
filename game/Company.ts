@@ -1,5 +1,4 @@
-import { Assets, Container, Graphics, Sprite, Text } from "pixi.js";
-import Game, { positionX, positionY } from "./Game";
+import Game, { GAME_X, positionX, positionY } from "./Game";
 import gsap from "gsap"
 
 const companyData = [
@@ -46,17 +45,17 @@ export default class Company {
     private companyName: Text;
 
     async init() {
-        const texture = await Assets.load('/blogImg/company.png');
-        this.group = new Container()
+        const texture = await PIXI.Assets.load('/blogImg/company.png');
+        this.group = new PIXI.Container()
 
-        this.img = new Sprite(texture)
+        this.img = new PIXI.Sprite(texture)
         this.img.anchor.set(0.5)
         this.img.scale.set(this.scale)
 
-        this.companyName = new Text({ text: companyData[0].name, anchor: 0.5 })
+        this.companyName = new PIXI.Text({ text: companyData[0].name, anchor: 0.5 })
         this.companyName.y = -this.img.height * this.scale - this.companyName.height
 
-        this.group.x = this.initX = positionX(this.img.width, this.scale) + window.innerWidth / 3;
+        this.group.x = this.initX = positionX(this.img.width, this.scale) + GAME_X / 3;
         this.group.y = positionY(this.img.height, this.scale);
         this.group.addChild(this.img, this.companyName)
     }
@@ -64,7 +63,7 @@ export default class Company {
     showTechnology(game: Game) {
         const texts = companyData[this.loop].technology
         texts.forEach((text, index) => {
-            const t = new Text({ text, anchor: 0.5 })
+            const t = new PIXI.Text({ text, anchor: 0.5 })
             t.x = game.app.screen.width / 3;
             t.y = game.app.screen.height / 2;
             t.alpha = 0
@@ -90,7 +89,7 @@ export default class Company {
 
     playing(fn) {
         if (this.group) {
-            if (!this.trigger && this.group.x <= (window.innerWidth / 3 + this.img.width * this.scale)) {
+            if (!this.trigger && this.group.x <= (GAME_X / 3 + this.img.width * this.scale)) {
                 this.trigger = true
                 console.log("show technology")
                 fn?.()

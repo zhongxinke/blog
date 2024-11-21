@@ -1,4 +1,3 @@
-import { Assets, MeshRope, Point } from "pixi.js";
 import Game from "./Game";
 
 export class MouseTrail {
@@ -6,10 +5,10 @@ export class MouseTrail {
     private historyY: number[] = [];
     private historySize = 20;
     private ropeSize = 100;
-    private points: Point[] = [];
+    private points: any[] = [];
     private mouseposition: { x: number, y: number } | undefined;
     async init(game: Game) {
-        const trailTexture = await Assets.load('https://pixijs.com/assets/trail.png');
+        const trailTexture = await PIXI.Assets.load('https://pixijs.com/assets/trail.png');
 
         for (let i = 0; i < this.historySize; i++) {
             this.historyX.push(0);
@@ -17,10 +16,10 @@ export class MouseTrail {
         }
 
         for (let i = 0; i < this.ropeSize; i++) {
-            this.points.push(new Point(0, 0))
+            this.points.push(new PIXI.Point(0, 0))
         }
 
-        const rope = new MeshRope({ texture: trailTexture, points: this.points })
+        const rope = new PIXI.MeshRope({ texture: trailTexture, points: this.points })
         rope.tint = '#0089A7';
         rope.blendMode = 'add'
 

@@ -46,7 +46,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <Nav />
+    <Nav />
 </template>
 
 <style lang="scss" scoped>

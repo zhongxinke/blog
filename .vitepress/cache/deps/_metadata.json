@@ -1,65 +1,38 @@
 {
-  "hash": "e80ebfa0",
+  "hash": "8ff4e063",
   "configHash": "afb76c1d",
-  "lockfileHash": "2a2d1981",
-  "browserHash": "35e07318",
+  "lockfileHash": "75fb0e3f",
+  "browserHash": "a95dccb0",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "232c84cd",
+      "fileHash": "fc21c5ad",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "e3bb57bd",
+      "fileHash": "40a83d1a",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "aa3efc70",
-      "needsInterop": false
-    },
-    "three": {
-      "src": "../../../node_modules/three/build/three.module.js",
-      "file": "three.js",
-      "fileHash": "c7fd7e44",
-      "needsInterop": false
-    },
-    "three/addons/libs/tween.module.js": {
-      "src": "../../../node_modules/three/examples/jsm/libs/tween.module.js",
-      "file": "three_addons_libs_tween__module__js.js",
-      "fileHash": "cb88b1de",
-      "needsInterop": false
-    },
-    "fs-extra": {
-      "src": "../../../node_modules/fs-extra/lib/index.js",
-      "file": "fs-extra.js",
-      "fileHash": "304c7a23",
-      "needsInterop": true
-    },
-    "three/addons/geometries/TextGeometry.js": {
-      "src": "../../../node_modules/three/examples/jsm/geometries/TextGeometry.js",
-      "file": "three_addons_geometries_TextGeometry__js.js",
-      "fileHash": "881e004a",
+      "fileHash": "6a572262",
       "needsInterop": false
     },
     "pixi.js": {
       "src": "../../../node_modules/pixi.js/lib/index.mjs",
       "file": "pixi__js.js",
-      "fileHash": "54ccca25",
-      "needsInterop": false
-    },
-    "gsap": {
-      "src": "../../../node_modules/gsap/index.js",
-      "file": "gsap.js",
-      "fileHash": "abdfed32",
+      "fileHash": "517161b0",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-XYSSNQS4": {
+      "file": "chunk-XYSSNQS4.js"
+    },
     "browserAll-7O5NU3HG": {
       "file": "browserAll-7O5NU3HG.js"
     },
@@ -95,12 +68,6 @@
     },
     "chunk-GOFTM4WQ": {
       "file": "chunk-GOFTM4WQ.js"
-    },
-    "chunk-XYSSNQS4": {
-      "file": "chunk-XYSSNQS4.js"
-    },
-    "chunk-ENILB2DW": {
-      "file": "chunk-ENILB2DW.js"
     },
     "chunk-5WRI5ZAA": {
       "file": "chunk-5WRI5ZAA.js"

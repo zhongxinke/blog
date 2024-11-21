@@ -7,7 +7,6 @@ import "./custom.css";
 
 // import debounce from "../../core/utils/directives/debounce";
 
-console.log('theme')
 export default {
   extends: DefaultTheme,
   Layout: () => {

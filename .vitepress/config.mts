@@ -21,6 +21,9 @@ export default defineConfig({
   description: "blog,前端博客,Vue",
   base: "/blog/",
   cleanUrls: true,
+  head: [
+    ['script', { src: 'https://pixijs.download/release/pixi.js' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
