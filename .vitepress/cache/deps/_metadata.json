@@ -2,36 +2,48 @@
   "hash": "8ff4e063",
   "configHash": "afb76c1d",
   "lockfileHash": "75fb0e3f",
-  "browserHash": "a95dccb0",
+  "browserHash": "f68c2304",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "fc21c5ad",
+      "fileHash": "c847520d",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "40a83d1a",
+      "fileHash": "9038e92d",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "6a572262",
+      "fileHash": "1c165815",
       "needsInterop": false
     },
     "pixi.js": {
       "src": "../../../node_modules/pixi.js/lib/index.mjs",
       "file": "pixi__js.js",
-      "fileHash": "517161b0",
+      "fileHash": "82cadaa3",
+      "needsInterop": false
+    },
+    "gsap": {
+      "src": "../../../node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "4f6e6b05",
       "needsInterop": false
     }
   },
   "chunks": {
+    "WebGLRenderer-QL5SELMV": {
+      "file": "WebGLRenderer-QL5SELMV.js"
+    },
     "chunk-XYSSNQS4": {
       "file": "chunk-XYSSNQS4.js"
+    },
+    "chunk-EXHWUFIN": {
+      "file": "chunk-EXHWUFIN.js"
     },
     "browserAll-7O5NU3HG": {
       "file": "browserAll-7O5NU3HG.js"
@@ -48,23 +60,17 @@
     "chunk-3ADSTOV3": {
       "file": "chunk-3ADSTOV3.js"
     },
-    "WebGPURenderer-SSPQ3WQ3": {
-      "file": "WebGPURenderer-SSPQ3WQ3.js"
+    "WebGPURenderer-2NWYTN67": {
+      "file": "WebGPURenderer-2NWYTN67.js"
     },
-    "chunk-2YCA3WTA": {
-      "file": "chunk-2YCA3WTA.js"
-    },
-    "chunk-HVGWWAX5": {
-      "file": "chunk-HVGWWAX5.js"
-    },
-    "WebGLRenderer-QL5SELMV": {
-      "file": "WebGLRenderer-QL5SELMV.js"
-    },
-    "chunk-EXHWUFIN": {
-      "file": "chunk-EXHWUFIN.js"
+    "chunk-Z75EXAPC": {
+      "file": "chunk-Z75EXAPC.js"
     },
     "chunk-4FRXSBPS": {
       "file": "chunk-4FRXSBPS.js"
+    },
+    "chunk-HVGWWAX5": {
+      "file": "chunk-HVGWWAX5.js"
     },
     "chunk-GOFTM4WQ": {
       "file": "chunk-GOFTM4WQ.js"

@@ -1,8 +1,4 @@
 import {
-  CanvasPool,
-  getTextureBatchBindGroup
-} from "./chunk-HVGWWAX5.js";
-import {
   AbstractRenderer,
   BufferResource,
   CLEAR,
@@ -16,6 +12,10 @@ import {
   textureBit,
   uboSyncFunctionsWGSL
 } from "./chunk-4FRXSBPS.js";
+import {
+  CanvasPool,
+  getTextureBatchBindGroup
+} from "./chunk-HVGWWAX5.js";
 import {
   BindGroup,
   Buffer,
@@ -2176,4 +2176,4 @@ export {
   GpuTextureSystem,
   WebGPURenderer
 };
-//# sourceMappingURL=chunk-2YCA3WTA.js.map
+//# sourceMappingURL=chunk-Z75EXAPC.js.map
